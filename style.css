@@ -262,3 +262,105 @@ nav a:hover {
         gap: 1rem;
     }
 }
+/* Add these updates to your style.css file */
+
+/* 1. Base Mobile Improvements */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 2.2rem;
+        line-height: 1.2;
+    }
+    
+    header p {
+        font-size: 1rem;
+    }
+    
+    .container {
+        padding: 0 15px;
+    }
+    
+    .section {
+        padding: 3rem 0;
+    }
+    
+    .section h2 {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+}
+
+/* 2. Navigation Menu Fix */
+@media (max-width: 768px) {
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    nav a {
+        font-size: 0.9rem;
+        padding: 0.3rem;
+    }
+}
+
+/* 3. Project Cards Adjustment */
+@media (max-width: 500px) {
+    .project-card {
+        padding: 1.5rem;
+        margin: 0 -15px;
+    }
+    
+    .project-card h3 {
+        font-size: 1.5rem;
+    }
+}
+
+/* 4. Contact Information Layout */
+@media (max-width: 480px) {
+    .contact-info li {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+    
+    .contact-info li span {
+        display: block;
+        width: 100%;
+    }
+}
+
+/* 5. Skills Section Stacking */
+@media (max-width: 600px) {
+    .skills-section {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .skills-section div {
+        padding: 1.5rem;
+    }
+}
+
+/* 6. About Section Padding */
+@media (max-width: 480px) {
+    .about-me-section {
+        padding: 1.5rem;
+    }
+}
+
+/* 7. Image Optimization */
+@media (max-width: 600px) {
+    .project-card img {
+        margin-bottom: 1.5rem;
+    }
+    
+    .project-card:hover img {
+        transform: none; /* Disable hover effects on mobile */
+    }
+}
+
+/* 8. Footer Text Size */
+@media (max-width: 480px) {
+    footer p {
+        font-size: 0.9rem;
+    }
+}
